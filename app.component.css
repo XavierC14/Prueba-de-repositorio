@@ -1,0 +1,71 @@
+.FR {
+  background-color: MediumAquaMarine;
+  border-radius: 10px;
+}
+
+.FL {
+  background-color: hotpink;
+  border-radius: 10px;
+}
+
+.FN {
+  background-color: limegreen;
+  border-radius: 10px;
+}
+
+.FC {
+  background-color: khaki;
+  border-radius: 10px;
+}
+
+.grid-container-fiestas {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-container-dias {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  width: 40vw;
+  padding: 20px;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.grid-container {
+  grid-template-columns: auto auto auto auto auto auto auto;
+  display: grid;
+  padding: 20px;
+  width: 40vw;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.grid-item {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 2vw;
+}
+
+.grid-item-letras {
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 2vw;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right
+}

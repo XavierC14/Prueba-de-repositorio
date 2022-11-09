@@ -1,0 +1,61 @@
+<!-- Buenas Valenti, no savia como hacer que dependiendo del dia salga de un color especifico 
+  asi que le he pedi ayuda Bryan y lo hice como el -->
+
+<div class="grid-container-fiestas">
+  <div>
+    <h1 [ngStyle]="{color: 'limegreen'}">Festivo Nacional</h1>
+  </div>
+  <div [ngStyle]="{color: 'MediumAquaMarine'}">
+    <h1>Festivo Regional</h1>
+  </div>
+  <div [ngStyle]="{color: 'hotpink'}">
+    <h1>Festivo Local</h1>
+  </div>
+  <div [ngStyle]="{color: 'khaki'}">
+    <h1>Festivo Centro</h1>
+  </div>
+</div>
+
+<div class="grid-container-dias left">
+  <div class="grid-item-letras grid-item-dias" *ngFor="let letra of diasLetras">
+    {{letra}}
+  </div>
+  <h3>Septiembre</h3>
+</div>
+
+<div class="grid-container-dias right">
+  <div class="grid-item-letras grid-item-dias" *ngFor="let letra of diasLetras">
+    {{letra}}
+  </div>
+  <h3>Octubre</h3>
+</div>
+
+<div>
+  <div class="grid-container left">
+    <div class="grid-void"></div>
+    <div class="grid-void"></div>
+    <div class="grid-void"></div>
+    <div class="grid-item" *ngFor="let dia of getDays(diasNum[0])">
+      <div [ngClass]="dia == 11 ? 'FR' 
+      : dia == 29 ? 'FL':null">
+        {{dia}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="grid-container right">
+    <div class="grid-void"></div>
+    <div class="grid-void"></div>
+    <div class="grid-void"></div>
+    <div class="grid-void"></div>
+    <div class="grid-void"></div>
+    <div class="grid-item" *ngFor="let dia of getDays(diasNum[1])">
+      <div [ngClass]="dia == 12 ? 'FN' 
+      : dia == 31 ? 'FC':null">
+        {{dia}}
+      </div>
+    </div>
+  </div>
+</div>
